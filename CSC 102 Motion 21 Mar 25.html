@@ -9,27 +9,37 @@
 </head>
 <!--Written By Joseph Hudson Jr-->
 <body>
-    <!--Setting up audio controls-->
-        <audio controls>
-            <source src = "Audio/the-shadow-knows-orson-welles.mp3"></source>
-        </audio>
+<!-- Setting up audio controls to allow the user to play audio -->
+<audio controls>
+  <!-- Source file for the audio content -->
+  <source src="Audio/the-shadow-knows-orson-welles.mp3"></source>
+</audio>
 
-   <!--Setting up image to animate-->
-        <div class="container">
-            <img id="animated-image" src="Current_Assignment_Images/Shadow eyes.jpg" alt="Random Image">
-          </div>
+<!-- Creating a container to hold the image that will be animated -->
+<div class="container">
+  <!-- Adding an image element with an ID for JavaScript manipulation and a specified source and description -->
+  <img id="animated-image" src="Current_Assignment_Images/Shadow eyes.jpg" alt="Random Image">
+</div>
 
-    <!--Setting up start/stop buttons-->
-          <div class="controls">
-            <button onclick="startAnimation()">Start</button>
-            <button onclick="stopAnimation()">Stop</button>
-          </div>
-          <div id="status">Status: Stopped</div>
-          <script src="CSC 102 Motion 21 Mar 25.js"></script>
+<!-- Creating a section for start/stop buttons to control the animation -->
+<div class="controls">
+  <!-- Button to start the animation; triggers the 'startAnimation' function -->
+  <button onclick="startAnimation()">Start</button>
+  <!-- Button to stop the animation; triggers the 'stopAnimation' function -->
+  <button onclick="stopAnimation()">Stop</button>
+</div>
+
+<!-- Placeholder to display the status of the animation (e.g., 'Playing' or 'Stopped') -->
+<div id="status">Status: Stopped</div>
+
+<!-- Linking an external JavaScript file to handle the animation logic -->
+<script src="CSC 102 Motion 21 Mar 25.js"></script>
 
 </body>
+
+<!-- Adding a footer section for copyright information -->
 <footer>
-    <p> Copyright 2025 JHJ </p>
-    </footer>
+  <p> Copyright 2025 JHJ </p>
+</footer>
 
 </html>

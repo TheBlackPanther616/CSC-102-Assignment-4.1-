@@ -1,81 +1,124 @@
-/* General styles */
+/* General styles for the entire page */
 body 
 {
-    /*Configuration for background and Animation style*/
+    /* Set a background image */
     background-image: url(Current_Assignment_Images/shadow-ban.jpg);
+    /* Prevent the background image from repeating */
     background-repeat: no-repeat;
+    /* Ensure the background image covers the entire screen area */
     background-size: 100% 100%;
+    /* Set a minimum height for the body to take the full viewport height */
     min-height: 100vh;
+    /* Remove default margin around the body */
     margin: 0;
+    /* Remove default padding around the body */
     padding: 0;
+    /* Use Flexbox for layout and align elements */
     display: flex;
+    /* Align elements vertically in a column */
     flex-direction: column;
+    /* Center elements horizontally */
     justify-content: center;
+    /* Center elements vertically */
     align-items: center;
+    /* Define a fixed height equal to the viewport height */
     height: 100vh;
+    /* Fallback background color in case the image doesn't load */
     background-color: #f0f0f0;
+    /* Set the font for the entire page */
     font-family: Arial, sans-serif;
-  }
-  
-  /* Container for animation */
-  .container 
-  {
+}
+
+/* Styling for the container that holds the animated image */
+.container 
+{
+    /* Use relative positioning as a reference point for absolutely positioned children */
     position: relative;
+    /* Set the container width to cover the full viewport width */
     width: 100vw;
+    /* Set the container height to 80% of the viewport height */
     height: 80vh;
+    /* Make the background transparent */
     background-color: transparent;
+    /* Make the border invisible */
     border: 2px transparent;
+    /* Hide elements that go beyond the container's bounds */
     overflow: hidden;
-  }
-  
-  /* Image styling */
-  #animated-image 
-  {
+}
+
+/* Styling for the animated image */
+#animated-image 
+{
+    /* Use absolute positioning to allow precise placement within the container */
     position: absolute;
-    width: 100px; /* Adjust the image size */
+    /* Set the width of the image */
+    width: 100px;
+    /* Adjust the height automatically while maintaining aspect ratio */
     height: auto;
-    display: none; /* Initially hidden */
-  }
-  
-  /* Button styling */
-  .controls 
-  {
+    /* Hide the image initially */
+    display: none;
+}
+
+/* Styling for the container holding the start/stop buttons */
+.controls 
+{
+    /* Add space above the buttons */
     margin-top: 20px;
-  }
-  
-  button 
-  {
+}
+
+/* General button styles */
+button 
+{
+    /* Add padding inside the buttons */
     padding: 10px 20px;
+    /* Add space between buttons */
     margin: 0 10px;
+    /* Set the background color to a green shade */
     background-color: #4caf50;
+    /* Set the text color to white */
     color: white;
+    /* Remove the default border */
     border: none;
+    /* Round the button corners */
     border-radius: 5px;
+    /* Change the cursor to a pointer on hover */
     cursor: pointer;
-  }
-  
-  button:hover 
-  {
+}
+
+/* Change button background color on hover */
+button:hover 
+{
     background-color: #45a049;
-  }
-  
-  button:active 
-  {
+}
+
+/* Change button background color when the button is clicked/active */
+button:active 
+{
     background-color: #3e8e41;
-  }
-  
-  /* Status message */
-  #status 
-  {
+}
+
+/* Styling for the status text */
+#status 
+{
+    /* Add space above the status text */
     margin-top: 20px;
+    /* Set the font size for the status text */
     font-size: 16px;
-    color:#3e8e41 ;
+    /* Set the color of the status text */
+    color: #3e8e41;
+    /* Make the font bold */
     font-weight: bold;
-  }
-  footer
-  {
+}
+
+/* Styling for the footer text */
+footer 
+{
+    /* Add space above the footer */
     margin-top: 20px;
+    /* Set the font size for the footer text */
     font-size: 10px;
-    color:#3e8e41 ;
+    /* Set the text color */
+    color: #3e8e41;
+    /* Make the font bold */
     font-weight: bold;
-  }
+}
